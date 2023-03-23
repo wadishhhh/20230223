@@ -1,0 +1,53 @@
+<html>
+    <head>
+        <title>顯示與隱藏</title>
+    </head>
+ 
+    <body>
+
+         <button onclick="hide();">隱藏文字</button>
+         <button onclick="show();">顯示文字</button>
+         <button onclick="hideyuuri();">隱藏yuuri</button>
+         <button onclick="showyuuri();">顯示yuuri</button>
+
+         <div class="news_title">
+              第六週上課
+              <br/>
+              要準備期中報告了 
+         </div>
+         <div class="yuuri">
+                  <img src="http://img.youtube.com/vi/yXZd7xVdpJ0/maxresdefault.jpg" jsaction="load:XAeZkd;" jsname="HiaYvf" class="n3VNCb pT0Scc KAlRDb" role="" aria-label="" alt="奇蹟歌手「優里」出道過程超夢幻！從在澀谷路邊表演巧遇原唱到 ..." data-noaft="1" style="width: 423px; height: 237.937px; margin: 12.5812px 0px;">
+          </div>
+
+          <button class="yuuri">
+                  <img src="https://i.ytimg.com/vi/-n790YakYKc/maxresdefault.jpg" jsaction="load:XAeZkd;" jsname="HiaYvf" class="n3VNCb pT0Scc KAlRDb" role="" aria-label="" alt="Yuuri – BETELGEUSE / THE FIRST TAKE - YouTube" data-noaft="1" style="width: 423px; height: 237.937px; margin: 12.5812px 0px;">
+          </button>
+
+     <script type="text/javascript">
+		     function hide() {
+			         document.querySelector(".news_title").style.display="none";
+		}
+
+		     function show() {
+			         document.querySelector(".news_title").style.display="block";
+		}
+
+             function hideyuuri() {
+			         
+			         let elements = document.querySelectorAll(".yuuri");
+			for(let i = 0; i < elements.length; i=i+1) {
+				elements[i].style.display = "none";
+			}
+		}
+
+             function showyuuri() {
+			         
+			         let elements = document.querySelectorAll(".yuuri");
+			for(let i = 0; i < elements.length; i=i+1) {
+				elements[i].style.display = "block";
+			}
+		}
+    </script>
+    </body>
+
+ </html>       
